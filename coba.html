@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Kancil yang Cerdik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext y='.9em' font-size='90' opacity='0.05'%3E🦌%3C/text%3E%3C/svg%3E") repeat;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            padding: 40px 30px;
+        }
+
+        .story-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #40916c;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .story-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(64, 145, 108, 0.15);
+        }
+
+        .story-section h2 {
+            color: #2d6a4f;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .story-section h2::before {
+            content: '📖';
+            font-size: 1.2rem;
+        }
+
+        .story-section p {
+            text-align: justify;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .moral {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-left-color: #f39c12;
+        }
+
+        .moral h2::before {
+            content: '💡';
+        }
+
+        .character-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .character-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: scale(1.05);
+        }
+
+        .character-card .emoji {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .character-card h3 {
+            color: #2d6a4f;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #2d6a4f;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            main {
+                padding: 25px 20px;
+            }
+            .story-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Si Kancil yang Cerdik</h1>
+            <p class="subtitle">Cerita Rakyat Nusantara tentang Kecerdasan dan Keberanian</p>
+        </header>
+
+        <main>
+            <div class="character-list">
+                <div class="character-card">
+                    <div class="emoji">🦌</div>
+                    <h3>Kancil</h3>
+                </div>
+                <div class="character-card">
+                    <div class="emoji">🐊</div>
+                    <h3>Buaya</h3>
+                </div>
+                <div class="character-card">
+                    <div class="emoji">🐯</div>
+                    <h3>Harimau</h3>
+                </div>
+                <div class="character-card">
+                    <div class="emoji">🐒</div>
+                    <h3>Monyet</h3>
+                </div>
+            </div>
+
+            <section class="story-section">
+                <h2>Awal Mula Petualangan</h2>
+                <p>Di tengah hutan rimba yang lebat dan sunyi, hidup seekor kancil kecil bernama Kancil. Ia dikenal oleh semua hewan hutan sebagai hewan yang sangat cerdik, licik, dan selalu menemukan jalan keluar dari segala kesulitan. Suatu pagi cerah, Kancil kelaparan dan berjalan mencari makanan. Ia sampai di tepi sungai yang lebar dan dalam, di mana banyak tumbuh timun-timun segar di seberang sungai.</p>
+            </section>
+
+            <section class="story-section">
+                <h2>Tipu Musuh di Tepi Sungai</h2>
+                <p>Kancil ingin menyeberang sungai untuk memetik timun, tetapi sungai itu dipenuhi buaya-buaya lapar. Kancil berfikir keras, lalu terlintas ide cemerlang di benaknya. Ia berteriak keras ke arah sungai: "Hei buaya-buaya! Raja hutan telah memerintahkan saya menghitung jumlah kalian semua untuk pesta besar besok!" Buaya-buaya yang penasaran lalu berkumpul dan menyusun barisan rapi dari tepi sungai ke seberangnya.</p>
+            </section>
+
+            <section class="story-section">
+                <h2>Melintas dengan Akal</h2>
+                <p>Kancil melompat dari punggung satu buaya ke buaya lainnya sambil menghitung: "Satu, dua, tiga, empat..." Sampai di seberang, Kancil tertawa lepas: "Terima kasih buaya-buaya bodoh! Aku hanya ingin menyeberang saja!" Buaya-buaya sadar telah ditipu, tetapi Kancil sudah jauh di seberang sungai menikmati timun segar.</p>
+            </section>
+
+            <section class="story-section">
+                <h2>Menghadapi Harimau Lapar</h2>
+                <p>Tidak lama berselancar, Kancil bertemu harimau yang lapar dan ingin memangsa dirinya. "Kancil, aku akan memakanmu!" gergaji harimau. Kancil tenang menjawab: "Jangan makan aku, Pak Harimau. Aku menjaga keju milik Raja Hutan yang sangat enak. Kalau kau makan aku, Raja Hutan akan marah!" Harimau tertarik dan meminta diberi keju tersebut.</p>
+            </section>
+
+            <section class="story-section">
+                <h2>Keju di Bulan</h2>
+                <p>Kancil menunjuk ke bulan purnama yang bersinar terang di atas air kolam. "Nah, itu keju Raja Hutan! Cara mengambilnya adalah dengan minum air kolam ini sampai habis." Harimau percaya dan minum air kolam dengan lahap hingga perutnya kembung dan sakit. Kancil lari selamat sambil tertawa: "Keju di bulan? Itu hanya pantulan cahaya, Pak Harimau!"</p>
+            </section>
+
+            <section class="story-section moral">
+                <h2>Hikmah Cerita</h2>
+                <p>Dari cerita Si Kancil, kita belajar bahwa <strong>kecerdasan dan ketenangan pikiran</strong> bisa mengalahkan kekuatan fisik yang lebih besar. Kancil tidak pernah menyerah, selalu berpikir kreatif, dan menggunakan akalnya untuk menyelesaikan masalah. Cerita ini juga mengajarkan kita untuk tidak mudah percaya pada godaan atau tipuan musuh, serta selalu waspada terhadap lingkungan sekitar.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Cerita Rakyat Indonesia • Diadaptasi untuk pembelajaran anak-anak</p>
+        </footer>
+    </div>
+</body>
+</html>
