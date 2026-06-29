@@ -12,57 +12,72 @@
             min-height: 100vh;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* Gradasi yang lebih lembut */
-            color: #333; /* Teks lebih gelap untuk kontras */
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            color: #333;
             line-height: 1.6;
             padding: 20px;
-            box-sizing: border-box; /* Pastikan padding tidak menambah ukuran total */
+            box-sizing: border-box;
             text-align: center;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih sedikit transparan */
-            padding: 40px 50px; /* Padding lebih lebar */
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 50px;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus */
-            max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
-            width: 100%; /* Gunakan lebar penuh hingga max-width tercapai */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
         }
         h1 {
-            font-size: 3.5rem; /* Ukuran font lebih besar untuk judul utama */
-            color: #2c3e50; /* Biru gelap untuk judul utama */
+            font-size: 3.5rem;
+            color: #2c3e50;
             margin-bottom: 10px;
-            text-shadow: 1px 1px 3px rgba(50,50,50,0.1); /* Bayangan teks halus */
+            text-shadow: 1px 1px 3px rgba(50,50,50,0.1);
         }
         h2 {
-            font-size: 1.8rem; /* Ukuran font subtitle */
-            color: #4a6f92; /* Biru lebih terang untuk subtitle */
+            font-size: 1.8rem;
+            color: #4a6f92;
             margin-bottom: 30px;
         }
         .intro-text {
-            font-size: 1.1rem; /* Ukuran font paragraf utama */
+            font-size: 1.1rem;
             margin-bottom: 30px;
             color: #555;
         }
         .assistant-info {
-            font-size: 1rem; /* Ukuran font untuk info asisten */
-            color: #7f8c8d; /* Abu-abu untuk informasi asisten */
+            font-size: 1rem;
+            color: #7f8c8d;
         }
         .assistant-info strong {
-            color: #2c3e50; /* Teks tebal asisten dengan warna yang lebih menonjol */
+            color: #2c3e50;
         }
-        /* Optional: Gaya untuk link/tombol jika diperlukan nanti */
-        /*
-        a {
-            color: #16a085;
+        .nav-links {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav-links a {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
-            color: #12876f;
+        .nav-links a:first-child {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
         }
-        */
+        .nav-links a:last-child {
+            background: linear-gradient(135deg, #2d6a4f, #40916c);
+            color: white;
+        }
+        .nav-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -78,8 +93,10 @@
             Ditenagai oleh <strong>Genkine</strong>, asisten AI Anda.
             Ayo kita wujudkan ide-ide luar biasa bersama!
         </p>
-        <!-- Di sini Anda bisa menambahkan link atau tombol untuk navigasi lebih lanjut jika diperlukan -->
-        <!-- Contoh: <p><a href="#projects">Lihat Proyek</a></p> -->
+        <div class="nav-links">
+            <a href="home.html">Tentang Genkine</a>
+            <a href="coba.html">Cerita Kancil</a>
+        </div>
     </div>
 </body>
 </html>
