@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daijoubu</title>
+    <title>Daijoubu - Ruang Proyek Anda</title>
     <style>
         body {
             display: flex;
@@ -11,17 +11,75 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* Gradasi yang lebih lembut */
+            color: #333; /* Teks lebih gelap untuk kontras */
+            line-height: 1.6;
+            padding: 20px;
+            box-sizing: border-box; /* Pastikan padding tidak menambah ukuran total */
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih sedikit transparan */
+            padding: 40px 50px; /* Padding lebih lebar */
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus */
+            max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
+            width: 100%; /* Gunakan lebar penuh hingga max-width tercapai */
         }
         h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 3.5rem; /* Ukuran font lebih besar untuk judul utama */
+            color: #2c3e50; /* Biru gelap untuk judul utama */
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(50,50,50,0.1); /* Bayangan teks halus */
         }
+        h2 {
+            font-size: 1.8rem; /* Ukuran font subtitle */
+            color: #4a6f92; /* Biru lebih terang untuk subtitle */
+            margin-bottom: 30px;
+        }
+        .intro-text {
+            font-size: 1.1rem; /* Ukuran font paragraf utama */
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .assistant-info {
+            font-size: 1rem; /* Ukuran font untuk info asisten */
+            color: #7f8c8d; /* Abu-abu untuk informasi asisten */
+        }
+        .assistant-info strong {
+            color: #2c3e50; /* Teks tebal asisten dengan warna yang lebih menonjol */
+        }
+        /* Optional: Gaya untuk link/tombol jika diperlukan nanti */
+        /*
+        a {
+            color: #16a085;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #12876f;
+        }
+        */
     </style>
 </head>
 <body>
-    <h1>Selamat datang di proyek Daijoubu! Saya Genkine, siap membuat kode Anda lebih baik.</h1>
+    <div class="container">
+        <h1>Daijoubu</h1>
+        <h2>Selamat Datang di Ruang Proyek Anda</h2>
+        <p class="intro-text">
+            Ini adalah halaman perkenalan untuk proyek "Daijoubu".
+            Platform ini dirancang untuk membantu Anda mengelola dan mengembangkan proyek Anda dengan efisien.
+            Kami di sini untuk memberikan dukungan teknis, ide-ide inovatif, dan memastikan semuanya berjalan lancar.
+        </p>
+        <p class="assistant-info">
+            Ditenagai oleh <strong>Genkine</strong>, asisten AI Anda.
+            Mari kita mulai membuat sesuatu yang luar biasa!
+        </p>
+        <!-- Di sini Anda bisa menambahkan link atau tombol untuk navigasi lebih lanjut jika diperlukan -->
+        <!-- Contoh: <p><a href="#projects">Lihat Proyek</a></p> -->
+    </div>
 </body>
 </html>
